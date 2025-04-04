@@ -71,7 +71,7 @@ class CurrentAccountServiceImplTest {
 
         assertEquals(customerId, result.customer.id)
         assertEquals(2, result.accounts.size)
-        assertEquals(100L, result.accounts[0].balance)
-        assertEquals(200L, result.accounts[1].balance)
+        assertEquals(100.0, result.accounts[0].balance)
+        assertEquals(200.0, result.accounts[1].balance)
     }
 }

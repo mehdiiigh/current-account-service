@@ -63,7 +63,7 @@ class CurrentAccountServiceImpl(val accountRepository: AccountRepository,
         )
     }
 
-    private fun Account.calculateBalance(): Long {
-        return this.transactions.sumOf { it.amount.toLong() }
+    private fun Account.calculateBalance(): Double {
+        return this.transactions.sumOf { it.amount }
     }
 }

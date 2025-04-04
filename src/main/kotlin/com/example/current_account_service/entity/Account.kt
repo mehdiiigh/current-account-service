@@ -13,5 +13,5 @@ data class Account(
     @JoinColumn(name = "customer_id")
     var customer: Customer,
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "account")
-    val transactions: List<Transaction> = emptyList()
+    val transactions: MutableList<Transaction> = mutableListOf()
 )

@@ -14,5 +14,5 @@ data class Customer(
     @Column(name = "surname", nullable = false)
     val surname: String,
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer")
-    val accounts: List<Account> = emptyList()
+    val accounts: MutableList<Account> = mutableListOf()
 )

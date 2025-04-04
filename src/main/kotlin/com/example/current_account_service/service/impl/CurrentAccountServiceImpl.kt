@@ -12,9 +12,9 @@ import jakarta.transaction.Transactional
 import org.springframework.stereotype.Service
 
 @Service
-class CurrentAccountImpl(val accountRepository: AccountRepository,
-                         val customerService: CustomerService,
-                         val transactionService: TransactionService) : AccountService {
+class CurrentAccountServiceImpl(val accountRepository: AccountRepository,
+                                val customerService: CustomerService,
+                                val transactionService: TransactionService) : AccountService {
 
     @Transactional
     override fun openAccount(openAccountDto: OpenAccountDto) {

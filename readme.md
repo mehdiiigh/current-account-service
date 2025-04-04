@@ -9,9 +9,10 @@ Current Account Service Sample Project
     - [Create Current Account](#create-current-account)
     - [Get Customer Account Details](#get-account-details)
 - [Sample Inputs and Outputs](#sample-inputs-and-outputs)
-    - [Create Account](#create-current-account-sample)
-    - [Get Account Details](#get-account-details-sample)
+    - [Create Current Account](#create-current-account-sample)
+    - [Get Customer Account Details](#get-account-details-sample)
 - [Setup and Installation](#setup-and-installation)
+- [Swagger API Document](#swagger-API-Document)
 
 ## Overview
 
@@ -54,7 +55,7 @@ This project is a sample service for create current accounts. It demonstrates ho
     ```json
   {
       "status": 404,
-      "message": "Customer 0 Not Found!"
+      "message": "Customer 50 Not Found!"
   }
   ```
 
@@ -90,7 +91,7 @@ GET /api/current-account/1
     ```json
   {
       "status": 404,
-      "message": "Customer 0 Not Found!"
+      "message": "Customer 50 Not Found!"
   }
   ```
 
@@ -110,4 +111,10 @@ mvn clean install
 Run the application:
 ```sh
 mvn spring-boot:run
+```
+
+### Swagger API Document
+Swagger UI also available in this url:
+```
+http://localhost:8080/swagger-ui/index.html
 ```

@@ -34,9 +34,3 @@ jobs:
         with:
           name: test-results
           path: target/surefire-reports/
-
-      - name: Upload package
-        uses: actions/upload-artifact@v4
-        with:
-          name: package
-          path: target/*.jar
